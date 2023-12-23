@@ -154,3 +154,10 @@ body, h1, p {
     right: 20px;
     cursor: pointer;
 }
+
+/* Style for our services*/
+.our-services {
+    font-size: 10px;
+   
+}
+
