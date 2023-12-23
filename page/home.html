@@ -6,7 +6,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Bootstrap JS and Popper.js (optional) -->
+    <!-- Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
             position: relative;
             overflow: hidden;
             background-color: white; 
-            transition: background-color 0.3s; 
+            transition: transform 0.3s, background-color 0.3s;
             border-radius: 15px;
         }
 
@@ -30,6 +30,20 @@
         .service-content {
             padding: 20px;
         }
+
+        .box-container {
+           border: 2px solid #4C367E; 
+           border-radius: 15px;
+           padding: 20px;
+           margin: 10px;
+           transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .box-container:hover {
+           background-color: #4C367E;
+          
+        }
+
     </style>
 </head>
 <body>
@@ -133,7 +147,7 @@
         <h2 style="z-index: 1; position: relative;">simple Dummy text services</h2>
         <!-- <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto; z-index: 1; position: relative;"> -->
 
-        <div class="row" style="margin-top: 50px;">
+        <div class="row" style="margin-top: 50px; align-items: center;">
             <!-- Service 1 -->
             <div class="col-md-4">
                 <div class="service-container">
@@ -211,6 +225,45 @@
     </div>
 </section>
 
+<!-- Why Choose Us Section -->
+<section class="why-choose-us" style="background-color: #F5F5F5; padding: 50px 0;">
+    <div class="container">
+        <h5>Why Choose Us</h5>
+        <h2>Few reasons to </h2>
+        <h2>Choose our <span style="color: #17A43B;">Company</span></h2>
+
+        <div class="row mt-5">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="box-container rounded border-purple text-center p-4">
+                    <h5 style="color: black; font-weight: bold;">Direct Interviews</h5>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="box-container rounded border-purple text-center p-4">
+                    <h5 style="color: black; font-weight: bold;">Cost Effective</h5>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="box-container rounded border-purple text-center p-4">
+                    <h5 style="color: black; font-weight: bold;">Trusted Customers</h5>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="box-container rounded border-purple text-center p-4">
+                    <h5 style="color: black; font-weight: bold;">Support Team</h5>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-black mt-3">Top rated by customers & immigration firms with 100% success rate.</p>
+    </div>
+</section>
 
 
 
