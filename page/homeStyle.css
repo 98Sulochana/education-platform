@@ -198,3 +198,83 @@ body, h1, p {
 .university-card:hover .overlay {
     opacity: 1;
 }
+
+/* Style for list */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.quick-links li span {
+    margin-right: 5px;
+}
+
+
+/* Footer Section Style*/
+footer input[type="text"] {
+    width: 50%; 
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px; 
+}
+
+
+div[style="flex-grow: 1;"] {
+    display: flex;
+    align-items: center;
+}
+
+.quick-links div[style="flex-grow: 1;"] {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+div[style="display: flex; margin-right: 20px;"] {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subscribe-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscribe-input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.subscribe-button {
+    background-color: #FF8B00;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
