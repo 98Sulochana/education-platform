@@ -44,6 +44,48 @@
           
         }
 
+        .input-group-custom {
+            display: flex;
+            margin-left: 10px; 
+        }
+        
+        .input-group-custom-left {
+            flex-grow: 1;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #4C367E;
+            border-radius: 5px 0 0 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group-custom-right {
+            background-color: #FF8B00;
+            padding: 10px;
+            border: 1px solid #4C367E;
+            border-radius: 0 5px 5px 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .input-group-custom-right:hover {
+            background-color: #FFA630; 
+        }
+
+        .input-group-custom-icon {
+            color: white;
+            margin-right: 5px;
+        }
+
+        .input-group-custom input {
+            width: 50%;
+            border: none;
+            outline: none;
+            background-color: white;
+            color: #4C367E;
+        }
+
     </style>
 </head>
 <body>
@@ -119,11 +161,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6" style="padding-top: 1px;">
-                <h6 style="font-family: sans-serif; font-weight: bold; color: #4C367E;">About Us</h6>
-                <h3 style="font-weight: bold;">Providing the best immigration<span style="color: #17A43B;"> service</span></h3>
-                <h5 style="color: #4C367E;">India based immigration consultant agency.</h5>
-                <p>Write your text here.</p>
-                <button class="btn btn-warning">Discover More</button>
+                <h5 style="font-family: sans-serif; font-weight: bold; color: #4C367E;">About Us</h5>
+                <h2 style="font-weight: bold;">Providing the best </h2>
+                <h3>immigration<span style="color: #17A43B;"> service</span></h2>
+                <h5 style="color: #4C367E; margin-top: 20px;">India based immigration consultant agency.</h5>
+                <p style="margin-top: 30px;">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                <button class="btn btn-warning mt-5">Discover More</button>
             </div>
             <div class="col-md-6">
                 <div class="d-flex flex-column align-items-center">
@@ -324,6 +367,125 @@
     </div>
 </section>
 
+<!-- Register Form Section -->
+<section class="register-form" style="background-color: white; color: white; padding: 50px 0;">
+    <div class="container">
+        <!-- Register Form Header -->
+        <div class="row">
+            <div class="col-md-4">
+                <h5 style="color: #4C367E;">Register Form</h5>
+                <h2 style="color: black;">Get in touch</h2>
+                <h2 style="color: black;">with <span style="color: #17A43B;">Us</span></h2>
+                <p style="color: black; margin-top: 50px;">simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Register Form -->
+                <form style="color: black;">
+
+                    <!-- First Row: First name and Last name -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" style="background-color: #C0C0C0; width: 100%;"> 
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" style="background-color: #C0C0C0; width: 100%;"> 
+                        </div>
+                    </div>
+
+                    <!-- Second Row: Email and Phone number -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email ID</label>
+                            <input type="email" class="form-control" id="email" style="background-color: #C0C0C0; width: 100%;"> 
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" style="background-color: #C0C0C0; width: 100%;">
+                        </div>
+                    </div>
+
+                    <!-- Third Row: Country and State -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="country">Country</label>
+                            <select id="country" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
+                                <option selected>Select</option>
+                                <!-- Add your country options here -->
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="state">State</label>
+                            <select id="state" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
+                                <option selected>Select</option>
+                                <!-- Add your state options here -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Row: City and Nearest branch -->
+                    <div class="form-row align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="city">City</label>
+                            <select id="city" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
+                                <option selected>Select</option>
+                              
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="branch">Nearest Branch</label>
+                            <select id="branch" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
+                                <option selected>Select</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Fifth Row: Register Button -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn btn-orange btn-block" style="background-color: #FF8B00; color: white; width: 100%;">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Global Accreditation Section -->
+<section class="global-accreditation" style="background-color: white; color: #4C367E; padding: 50px 0;">
+    <div class="container">
+        <!-- Move the first three texts outside the grid container -->
+        <h5 style="z-index: 1; position: relative; color: #4C367E;">Global Accreditation</h5>
+        <h2 style="z-index: 1; position: relative; color: black;">Lorem ipsum is</h2>
+        <h2 style="z-index: 1; position: relative; color: black; margin-bottom: 40px;">simply a services<span style="color: #17A43B;"> Dummy Text</span></h2>
+
+        <div class="grid-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <!-- Combined image and right side box -->
+            <div style="position: relative; overflow: hidden; height: 500px; margin-right: -20px;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;"></div>
+                <img src="./assets/people.jpeg" alt="People" class="img-fluid" style="width: 100%; height: 100%;">
+            </div>
+
+            <!-- Right side with text -->
+            <div style="background-color: #4C367E; padding-left: 30px; padding-right: 30px; height: 500px; overflow-y: auto;">
+                <h2 style="color: white; margin-top: 60px;">Global Accreditation</h2>
+                <p style="color: white;">
+                    simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. It was popularized in the 1960s with the release of 
+                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Quick Link, Test Prep, Admission, Contact Us Section -->
 <section class="quick-links" style="background-color: #2A1F1F; padding: 50px 0; color: white;">
     <div class="container">
@@ -386,7 +548,7 @@
 </section>
 
 <!-- Footer Section -->
-<footer style="background-color: black; color: white; padding: 50px 0;">
+<footer style="background-color: black; color: white; padding: 5px 0;">
     <div class="container">
        
         <!-- First Horizontal Line -->
@@ -409,13 +571,13 @@
             </div>
 
             <!-- Subscribe Text Box -->
-            <div style="flex-grow: 1;">
-                <div style="display: flex;">
-                    <div style="flex-grow: 1; margin-left: 200px; border-radius: 5px; padding: 5px;">
-                        <input type="text" placeholder="Enter your email address" style="width: 100%; border: none; outline: none; background-color: white; color: white;">
+            <div class="container mt-5" style="width: fit-content;">
+                <div class="input-group-custom">
+                    <div class="input-group-custom-left">
+                        <span style="color: #888;">Enter your email address</span>
                     </div>
-                    <div style="background-color: #FF8B00; padding: 5px; border-radius: 5px; cursor: pointer; margin-left: 5px;">
-                        <i class="fas fa-paper-plane" style="color: white;"></i>
+                    <div class="input-group-custom-right">
+                        <i class="fas fa-paper-plane input-group-custom-icon"></i>
                     </div>
                 </div>
             </div>
