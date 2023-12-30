@@ -1,889 +1,1054 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="homeStyle.css">
-    
+
+    <!-- Add these script imports in your HTML -->
+    <script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+
     <title>SQUARE ONE OVERSEAS</title>
-    
+    <style>
+        /* Remove display: flex from .carousel-inner .item */
+        .carousel-inner .item {
+            /* display: flex; Remove this line */
+        }
+
+        .container-item {
+            background-color: aqua;
+            margin-left: 10px;
+            width: 30%;
+
+            /* height: auto; */
+            /* flex: 1;  */
+        }
+
+        .container-item img {
+            width: 50%;
+        }
+
+        .rating {
+            color: #fbff00;
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- Top Navigation Bar -->
-<div class="top-navbar">
-    <div class="top-navbar-item">
-        <i class="fas fa-envelope"></i> dummymail@company.com
-    </div>
-    <div class="top-navbar-item">
-        <i class="fas fa-map-marker-alt"></i> dummylocation
-    </div>
-    <div class="top-navbar-item">
-        <i class="fas fa-clock"></i> Monday to Saturday - 9am to 6pm
-    </div>
-    <div class="top-navbar-item top-navbar-links">
-        Help | Support | Contact
-    </div>
-    <div class="social-icons-box">
-        <i class="fab fa-twitter social-icon"></i>
-        <i class="fab fa-facebook-f social-icon"></i>
-        <i class="fab fa-instagram social-icon"></i>
-        <i class="fab fa-pinterest social-icon"></i>
-    </div>
-</div>
-
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <div class="navbar-brand d-flex align-items-center" style="margin-left: 10px;">
-            <img src="./assets/logo.png" alt="Company Logo" height="100px">
-            <div class="company-info ">
-                <strong>SQUARE ONE OVERSEAS</strong>
-                <p>Promising Your Dreams</p>
-            </div>
+    <!-- Top Navigation Bar -->
+    <div class="top-navbar">
+        <div class="top-navbar-item">
+            <i class="fas fa-envelope"></i> dummymail@company.com
         </div>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav" style="font-weight: bold; color: black; padding: 20px;">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link current-tab" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-3" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-3" href="#">Study Overseas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-3" href="#">Test Prep</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-3" href="#">Blogs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-3" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-3" href="#">Contact Us</a>
-                </li>
-            </ul>
+        <div class="top-navbar-item">
+            <i class="fas fa-map-marker-alt"></i> dummylocation
         </div>
-    </div>
-</nav>
-
-<!-- Home Content Section -->
-<div class="home-content">
-  <div class="home-content-top">
-    <h1>Planning to Study Abroad?</h1>
-    <p class="subtext">Square One Overseas Promising Your Dreams</p>
-    <button class="colorful-button">What do you want to learn?</button>
-  </div>
-
-    <div class="options">
-        <div class="option">
-            <i class="fa-solid fa-computer-mouse"></i>
-            <p>Ready to apply online</p>
+        <div class="top-navbar-item">
+            <i class="fas fa-clock"></i> Monday to Saturday - 9am to 6pm
         </div>
-        <div class="option">
-            <i class="fa-solid fa-building-columns"></i>
-            <p>Get in touch with nearest branch</p>
+        <div class="top-navbar-item top-navbar-links">
+            Help | Support | Contact
         </div>
-        <div class="option">
-            <i class="fa-solid fa-certificate"></i>
-            <p>Global authorized certificate</p>
+        <div class="social-icons-box">
+            <i class="fab fa-twitter social-icon"></i>
+            <i class="fab fa-facebook-f social-icon"></i>
+            <i class="fab fa-instagram social-icon"></i>
+            <i class="fab fa-pinterest social-icon"></i>
         </div>
     </div>
 
-    <div class="floating-button">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</div>
-
-<!-- About Us Section -->
-<section class="about-us">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6" style="padding-top: 1px;">
-                <h5 style="font-family: sans-serif; font-weight: bold; color: #4C367E;">About Us</h5>
-                <h2 style="font-weight: bold;">Providing the best </h2>
-                <h3 style="font-weight: bold;">immigration<span style="color: #17A43B;"> service</span></h2>
-                <h5 style="color: #4C367E; margin-top: 20px;">India based immigration consultant agency.</h5>
-                <p style="margin-top: 30px;">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged</p>
-                <button class="btn btn-warning mt-5" style="color: white; border-radius: 20px; width: 200px; height: 50px; font-weight: bold; font-size: 20px;">Discover More</button>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="rounded-circle overflow-hidden" style=" margin-bottom: 20px;">
-                        <img src="./assets/img1.jpeg" alt="Image 1" class="img-fluid rounded-circle align-items-center" style="width: 250px; height: 250px; margin-top: 50px;">
-                    </div>
-                    <img src="./assets/img2.jpeg" alt="Image 2" class="img-fluid align-items-center" style="width: 250px; height: 150px; margin-top: 5px;">
-                    <img src="./assets/img3.jpeg" alt="Image 3" class="img-fluid align-items-center" style="width: 250px; height: 250px;">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Services Section -->
-<section class="our-services" style="position: relative; background-image: url('./assets/bg2.jpeg'); padding: 50px 0;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;"></div>
-    <div class="container text-white">
-        <h5 style="z-index: 1; position: relative;">Our Services</h5>
-        <h2 style="z-index: 1; position: relative;">Orem ipsum is</h2>
-        <h2 style="z-index: 1; position: relative;">simple Dummy text <span style="color: #17A43B;"> services</span></h2>
-        <!-- <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto; z-index: 1; position: relative;"> -->
-
-        <div class="row align-items-center" style="margin-top: 50px; align-items: center;">
-            <!-- Service 1 -->
-            <div class="col-md-4">
-                <div class="service-container">
-                    <div class="mb-4 mb-md-0 bg-white service-content">
-                        <img src="./assets/i1.png" alt="Service 1" class="img-fluid">
-                        <h4 style="color: black;">Career Counseling</h4>
-                        <p class="text-dark">We have scheduled counselling sessions for interested candidates who have their plans to study abroad. The initial counselling enables us to understand the career graph of students.</p>
-                        <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
-                    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-brand d-flex align-items-center" style="margin-left: 10px;">
+                <img src="./assets/logo.png" alt="Company Logo" height="100px">
+                <div class="company-info ">
+                    <strong>SQUARE ONE OVERSEAS</strong>
+                    <p>Promising Your Dreams</p>
                 </div>
             </div>
 
-            <!-- Service 2 -->
-            <div class="col-md-4">
-                <div class="service-container">
-                    <div class="mb-4 mb-md-0 bg-white service-content">
-                        <img src="./assets/i2.png" alt="Service 2" class="img-fluid">
-                        <h4 style="color: black;">University Selection</h4>
-                        <p class="text-dark">University Selection is a major step towards garnering student's career graph. Our in-house team of mentors gives a pre-university briefing for students and acquaint them with the right university</p>
-                        <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
-                    </div>
-                </div>
-            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <!-- Service 3 -->
-            <div class="col-md-4">
-                <div class="service-container">
-                    <div class="mb-4 mb-md-0 bg-white service-content">
-                        <img src="./assets/i3.png" alt="Service 3" class="img-fluid">
-                        <h4 style="color: black;">Scholarship Assistance</h4>
-                        <p class="text-dark">When students apply for a particular university we make sure that we accustom the students with scholarship assistance being provided by the university.</p>
-                        <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 50px;">
-            <!-- Service 4 -->
-            <div class="col-md-4">
-                <div class="service-container">
-                    <div class="mb-4 mb-md-0 bg-white service-content">
-                        <img src="./assets/i4.png" alt="Service 4" class="img-fluid">
-                        <h4 style="color: black;">Course Selection</h4>
-                        <p class="text-dark">The expert panel of Consultants are always available for the students who find it tough to select their course with universities when applying for their graduate and postgraduate courses.</p>
-                        <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="col-md-4">
-                <div class="service-container">
-                    <div class="mb-4 mb-md-0 bg-white service-content">
-                        <img src="./assets/i5.png" alt="Service 5" class="img-fluid">
-                        <h4 style="color: black;">Visa Assistance</h4>
-                        <p class="text-dark">The students who enrol with us have a privilege to have a comprehensive visa assistance and documentation required for the successful admission to the university.</p>
-                        <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="col-md-4">
-                <div class="service-container">
-                    <div class="mb-4 mb-md-0 bg-white service-content">
-                        <img src="./assets/i6.png" alt="Service 6" class="img-fluid">
-                        <h4 style="color: black;">Pre-Departure Assistance</h4>
-                        <p class="text-dark">We are also involved in the pre-departure assistance service for the students. The in-house team brief the students about their travel plans, accommodation and other amenities.</p>
-                        <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Us Section -->
-<section class="why-choose-us" style="background-color: #F5F5F5; padding: 50px 0;">
-    <div class="container">
-        <h5 style="font-weight: bold;">Why Choose Us</h5>
-        <h2 style="font-weight: bold;">Few reasons to </h2>
-        <h2 style="font-weight: bold;">Choose our <span style="color: #17A43B;">Company</span></h2>
-
-        <div class="row mt-5">
-            <!-- Card 1 -->
-            <div class="col-md-3">
-                <div class="box-container rounded border-purple text-center p-4">
-                    <h5 style="color: black; font-weight: bold;">Direct Interviews</h5>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-3">
-                <div class="box-container rounded border-purple text-center p-4">
-                    <h5 style="color: black; font-weight: bold;">Cost Effective</h5>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-3">
-                <div class="box-container rounded border-purple text-center p-4">
-                    <h5 style="color: black; font-weight: bold;">Trusted Customers</h5>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-md-3">
-                <div class="box-container rounded border-purple text-center p-4">
-                    <h5 style="color: black; font-weight: bold;">Support Team</h5>
-                </div>
-            </div>
-        </div>
-        <p class="text-center text-black mt-3 font-weight-bold">Top rated by customers & immigration firms with 100% success rate.</p>
-    </div>
-</section>
-
-<!-- Info Section -->
-<section class="info-section" style="background-image: url('./assets/company.jpg'); background-size: 100% 100%; position: relative; height: 400px;">
-    <div class="overlay" style="background-color: #17A43B; opacity: 0.8; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-    <div class="container text-center text-white" style="position: relative; z-index: 2; height: 100%;">
-        <h5 style="padding-top: 60px;">THE NUMBERS SAY IT ALL</h5>
-
-        
-        <div class="row mt-5">
-            <!-- Certificate Icon -->
-            <div class="col-md-3">
-                <i class="fas fa-certificate fa-3x" style="color: white;"></i>
-                <p class="mt-2" style="font-size: 50px;">28</p>
-                <p style="font-size: 20px;">Certified Courses</p>
-            </div>
-
-            <!-- Graduate Student Icon -->
-            <div class="col-md-3">
-                <i class="fas fa-graduation-cap fa-3x" style="color: white;"></i>
-                <p class="mt-2" style="font-size: 50px;">204,339</p>
-                <p style="font-size: 20px;">Student Enrolled</p>
-            </div>
-
-            <!-- Building Icon -->
-            <div class="col-md-3">
-                <i class="fas fa-building fa-3x" style="color: white;"></i>
-                <p class="mt-2" style="font-size: 50px;">75%</p>
-                <p style="font-size: 20px;">Passing to Universities</p>
-            </div>
-
-            <!-- 2 People Icon -->
-            <div class="col-md-3">
-                <i class="fas fa-users fa-3x" style="color: white;"></i>
-                <p class="mt-2" style="font-size: 50px;">79%</p>
-                <p style="font-size: 20px;">Satisfied Parent</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Top Universities Section -->
-<section class="top-universities" style="background-color: white; color: white; padding: 50px 0; overflow: hidden;">
-    <div class="container">
-        <h5 style="font-weight: bold; color: #4C367E;">Top universities</h5>
-        <h2 style="font-weight: bold; color: black;">Top Universities </h2>
-        <h2 style="font-weight: bold; color: black;">That we <span style="color: #17A43B;">Collaborated</span></h2>
-        
-
-        <div class="row" style="display: flex; justify-content: space-evenly; align-items: center; margin-top: 40px;">
-            <!-- University 1 -->
-            <div class="col-md-3" style="flex: 1;">
-                <div class="university-card" style="text-align: center; height: 200px;">
-                    <img src="./assets/uni1.jpeg" alt="University 1" class="img-fluid" style="width: 100%; height: 100%; ">
-                    <div class="overlay">
-                        <p>UNIVERSITY OF CALIFORNIA</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- University 2 -->
-            <div class="col-md-3" style="flex: 1;">
-                <div class="university-card" style="text-align: center; height: 200px;">
-                    <img src="./assets/uni2.jpeg" alt="University 2" class="img-fluid" style="width: 100%; height: 100%; ">
-                    <div class="overlay">
-                        <p>UNIVERSITY OF CAMBRIDGE</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- University 3 -->
-            <div class="col-md-3" style="flex: 1;">
-                <div class="university-card" style="text-align: center; height: 200px;">
-                    <img src="./assets/uni3.jpeg" alt="University 3" class="img-fluid" style="width: 100%; height: 100%;">
-                    <div class="overlay">
-                        <p>LELAND STANFORD JUNIOR UNIVERSITY</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- University 4 -->
-            <div class="col-md-3" style="flex: 1;">
-                <div class="university-card" style="text-align: center; height: 200px;">
-                    <img src="./assets/uni4.jpeg" alt="University 4" class="img-fluid" style="width: 100%; height: 100%;">
-                    <div class="overlay">
-                        <p>UNIVERSITY OF OXFORD</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- University 5 -->
-            <div class="col-md-3" style="flex: 1;">
-                <div class="university-card" style="text-align: center; height: 200px;">
-                    <img src="./assets/uni5.jpeg" alt="University 5" class="img-fluid" style="width: 100%; height: 100%;">
-                    <div class="overlay">
-                        <p>UNIVERSITY OF HARVARD</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials Section -->
-<section class="testimonials" style="position: relative; background-image: url('./assets/feed.jpeg'); background-size: cover; height: 80vh; text-align: left; color: white; padding: 10px 0; display: flex; flex-direction: column; justify-content: center;">
-
-    <!-- Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;"></div>
-
-    <div class="container text-white">
-        <h5 style="z-index: 1; position: relative;">Testimonials</h5>
-        <h2 style="z-index: 1; position: relative;">What they're talking</h2>
-        <h2 style="z-index: 1; position: relative;">about <span style="color: #17A43B;">Square one overseas</span></h2>
-        <!-- Carousel -->
-        <div id="testimonialsCarousel1" class="carousel slide mt-5" data-ride="carousel">
-            <div class="carousel-inner">
-
-                <!-- Testimonial 1 -->
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-around align-items-center">
-                        <!-- Card 1 -->
-                        <div class="card-container" style="margin-right: 30px;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile1.jpeg" alt="Profile 1" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.9</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="card-container" style="margin-right: 30px;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile2.jpeg" alt="Profile 2" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.5</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile3.jpeg" alt="Profile 3" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.2</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="testimonialsCarousel2" class="carousel slide mt-5" data-ride="carousel">
-            <!-- Testimonial 2 -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-around align-items-center">
-                    <!-- Card 1 -->
-                    <div class="card-container" style="margin-right: 30px;">
-                        <div class="card-container" style="margin-right: 30px;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile1.jpeg" alt="Profile 1" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.9</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="card-container" style="margin-right: 30px;">
-                        <div class="card-container" style="margin-right: 30px;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile2.jpeg" alt="Profile 2" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.5</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-container">
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile3.jpeg" alt="Profile 3" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.2</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="testimonialsCarousel3" class="carousel slide mt-5" data-ride="carousel">
-            <!-- Testimonial 3 -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-around align-items-center">
-                    <!-- Card 1 -->
-                    <div class="card-container" style="margin-right: 30px;">
-                        <div class="card-container" style="margin-right: 30px;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile1.jpeg" alt="Profile 1" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.9</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="card-container" style="margin-right: 30px;">
-                        <div class="card-container" style="margin-right: 30px;">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="profile-image">
-                                            <img src="./assets/profile2.jpeg" alt="Profile 2" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                            <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                        </div>
-                                        <div class="ml-2" style="color: black;">4.5</div>
-                                        <div class="ml-2">
-                                            <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text" style="color: black;">
-                                        Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="profile-image">
-                                        <img src="./assets/profile3.jpeg" alt="Profile 3" class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                        <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                        <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                        <i class="fa-solid fa-star" style="color: #fbff00;"></i>
-                                        <i class="fa-regular fa-star" style="color: #fbff00;"></i>
-                                    </div>
-                                    <div class="ml-2" style="color: black;">4.2</div>
-                                    <div class="ml-2">
-                                        <i class="fa-solid fa-quote-left" style="color: #4C367E; font-size: 60px;"></i>
-                                    </div>
-                                </div>
-                                <p class="card-text" style="color: black;">
-                                    Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <!-- Carousel Dots -->
-        <ol class="carousel-indicators" style="margin-top: 10px;">
-            <li data-target="#testimonialsCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#testimonialsCarousel2" data-slide-to="1"></li>
-            <li data-target="#testimonialsCarousel3" data-slide-to="2"></li>
-        </ol>
-    </div>
-</section>
-
-<!-- Register Form Section -->
-<section class="register-form" style="background-color: white; color: white; padding: 50px 0;">
-    <div class="container">
-        <!-- Register Form Header -->
-        <div class="row">
-            <div class="col-md-4">
-                <h5 style="color: #4C367E; font-weight: bold;">Register Form</h5>
-                <h2 style="color: black; font-weight: bold;">Get in touch</h2>
-                <h2 style="color: black; font-weight: bold;">with <span style="color: #17A43B;">Us</span></h2>
-                <p style="color: black; margin-top: 50px;">Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="col-md-6">
-                <!-- Register Form -->
-                <form style="color: black;">
-
-                    <!-- First Row: First name and Last name -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" style="background-color: #C0C0C0; width: 100%;"> 
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" style="background-color: #C0C0C0; width: 100%;"> 
-                        </div>
-                    </div>
-
-                    <!-- Second Row: Email and Phone number -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="email">Email ID</label>
-                            <input type="email" class="form-control" id="email" style="background-color: #C0C0C0; width: 100%;"> 
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="phone">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" style="background-color: #C0C0C0; width: 100%;">
-                        </div>
-                    </div>
-
-                    <!-- Third Row: Country and State -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="country">Country</label>
-                            <select id="country" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
-                                <option selected>Select</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="state">State</label>
-                            <select id="state" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
-                                <option selected>Select</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Fourth Row: City and Nearest branch -->
-                    <div class="form-row align-items-center">
-                        <div class="form-group col-md-6">
-                            <label for="city">City</label>
-                            <select id="city" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
-                                <option selected>Select</option>
-                              
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="branch">Nearest Branch</label>
-                            <select id="branch" class="form-control" style="background-color: #C0C0C0; width: 100%;"> 
-                                <option selected>Select</option>
-                                
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Fifth Row: Register Button -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <button type="submit" class="btn btn-orange btn-block" style="background-color: #FF8B00; color: white; width: 100%;">Register</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Global Accreditation Section -->
-<section class="global-accreditation" style="background-color: white; color: #4C367E; padding: 50px 0;">
-    <div class="container">
-        <h5 style="z-index: 1; position: relative; color: #4C367E;">Global Accreditation</h5>
-        <h2 style="z-index: 1; position: relative; color: black;">Lorem ipsum is</h2>
-        <h2 style="z-index: 1; position: relative; color: black; margin-bottom: 40px;">simply a services<span style="color: #17A43B;"> Dummy Text</span></h2>
-
-        <div class="grid-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <!-- Combined image and right side box -->
-            <div style="position: relative; overflow: hidden; height: 500px; margin-right: -20px;">
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;"></div>
-                <img src="./assets/people.jpeg" alt="People" class="img-fluid" style="width: 100%; height: 100%;">
-            </div>
-
-            <!-- Right side with text -->
-            <div style="background-color: #4C367E; padding-left: 30px; padding-right: 30px; height: 500px; overflow-y: auto;">
-                <h2 style="color: white; margin-top: 60px;">Global Accreditation</h2>
-                <p style="color: white;">
-                    Lorum ipsm simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularized in the 1960s with the release of 
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Quick Link, Test Prep, Admission, Contact Us Section -->
-<section class="quick-links" style="background-color: #2A1F1F; padding: 50px 0; color: white;">
-    <div class="container">
-        <div class="row">
-            <!-- Quick Link -->
-            <div class="col-md-3">
-                <h5>Quick Link</h5>
-                <ul>
-                    <li><span style="color: #FF8B00">></span> <span style="color: #888;">Why Choose Us?</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">About Us</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Career</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Register</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Connect with us</span></li>
-                </ul>
-            </div>
-
-            <!-- Test Prep -->
-            <div class="col-md-3">
-                <h5>Test Prep</h5>
-                <ul>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">IELTS</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">PTE</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">TOEFL</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">CELPIP</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">GRE</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">GMAT</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">SAT</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">GERMAN</span></li>
-                </ul>
-            </div>
-
-            <!-- Admission -->
-            <div class="col-md-3">
-                <h5>Admission</h5>
-                <ul>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in UK</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in USA</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Canada</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Australia</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in France</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Germany</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Ireland</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in New Zealand</span></li>
-                </ul>
-            </div>
-
-            <!-- Contact Us -->
-            <div class="col-md-3">
-                <h5>Contact Us</h5>
-                <ul>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">+911234567890</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Address Dummy Text</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Location</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Landmark</span></li>
-                    <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Email Id</span></li>
+            <div class="collapse navbar-collapse" id="navbarNav"
+                style="font-weight: bold; color: black; padding: 20px;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link current-tab" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#">Study Overseas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#">Test Prep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Footer Section -->
-<footer style="background-color: black; color: white; padding: 5px 0;">
-    <div class="container">
-       
-        <!-- First Horizontal Line -->
-        <div class="row mb-4">
-            <div class="col-md-6">
-                <h5>Connect with us</h5>
+    <!-- Home Content Section -->
+    <div class="home-content">
+        <div class="home-content-top">
+            <h1>Planning to Study Abroad?</h1>
+            <p class="subtext">Square One Overseas Promising Your Dreams</p>
+            <button class="colorful-button">What do you want to learn?</button>
+        </div>
+
+        <div class="options">
+            <div class="option">
+                <i class="fa-solid fa-computer-mouse"></i>
+                <p>Ready to apply online</p>
             </div>
-            <div class="col-md-6 text-center">
-                <h5>Subscribe with us</h5>
+            <div class="option">
+                <i class="fa-solid fa-building-columns"></i>
+                <p>Get in touch with nearest branch</p>
+            </div>
+            <div class="option">
+                <i class="fa-solid fa-certificate"></i>
+                <p>Global authorized certificate</p>
             </div>
         </div>
-        <!-- Social Media Icons -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px;">
-            <div style="display: flex; margin-right: 20px;">
-                <i class="fab fa-facebook-f fa-2x" style="color: black; background-color: white; border-radius: 50%; padding: 10px;"></i>
-                <i class="fab fa-linkedin-in fa-2x" style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
-                <i class="far fa-envelope fa-2x" style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
-                <i class="fab fa-twitter fa-2x" style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
-                <i class="fab fa-instagram fa-2x" style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
-            </div>
 
-            <!-- Subscribe Text Box -->
-            <div class="container mt-5" style="width: fit-content;">
-                <div class="input-group-custom">
-                    <div class="input-group-custom-left">
-                        <span style="color: #888;">Enter your email address</span>
-                    </div>
-                    <div class="input-group-custom-right">
-                        <i class="fas fa-paper-plane input-group-custom-icon"></i>
+        <div class="floating-button">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" style="padding-top: 1px;">
+                    <h5 style="font-family: sans-serif; font-weight: bold; color: #4C367E;">About Us</h5>
+                    <h2 style="font-weight: bold;">Providing the best </h2>
+                    <h3 style="font-weight: bold;">immigration<span style="color: #17A43B;"> service</span></h2>
+                        <h5 style="color: #4C367E; margin-top: 20px;">India based immigration consultant agency.</h5>
+                        <p style="margin-top: 30px;">Lorem ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries but also the leap into electronic typesetting,
+                            remaining essentially unchanged</p>
+                        <button class="btn btn-warning mt-5"
+                            style="color: white; border-radius: 20px; width: 200px; height: 50px; font-weight: bold; font-size: 20px;">Discover
+                            More</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="rounded-circle overflow-hidden" style=" margin-bottom: 20px;">
+                            <img src="./assets/img1.jpeg" alt="Image 1"
+                                class="img-fluid rounded-circle align-items-center"
+                                style="width: 250px; height: 250px; margin-top: 50px;">
+                        </div>
+                        <img src="./assets/img2.jpeg" alt="Image 2" class="img-fluid align-items-center"
+                            style="width: 250px; height: 150px; margin-top: 5px;">
+                        <img src="./assets/img3.jpeg" alt="Image 3" class="img-fluid align-items-center"
+                            style="width: 250px; height: 250px;">
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Second Horizontal Line -->
-        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-            <div>
-                <span>&copy;</span> All rights reserved by Square One Overseas
+    <!-- Our Services Section -->
+    <section class="our-services"
+        style="position: relative; background-image: url('./assets/bg2.jpeg'); padding: 50px 0;">
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;">
+        </div>
+        <div class="container text-white">
+            <h5 style="z-index: 1; position: relative;">Our Services</h5>
+            <h2 style="z-index: 1; position: relative;">Orem ipsum is</h2>
+            <h2 style="z-index: 1; position: relative;">simple Dummy text <span style="color: #17A43B;"> services</span>
+            </h2>
+            <!-- <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto; z-index: 1; position: relative;"> -->
+
+            <div class="row align-items-center" style="margin-top: 50px; align-items: center;">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="service-container">
+                        <div class="mb-4 mb-md-0 bg-white service-content">
+                            <img src="./assets/i1.png" alt="Service 1" class="img-fluid">
+                            <h4 style="color: black;">Career Counseling</h4>
+                            <p class="text-dark">We have scheduled counselling sessions for interested candidates who
+                                have their plans to study abroad. The initial counselling enables us to understand the
+                                career graph of students.</p>
+                            <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="service-container">
+                        <div class="mb-4 mb-md-0 bg-white service-content">
+                            <img src="./assets/i2.png" alt="Service 2" class="img-fluid">
+                            <h4 style="color: black;">University Selection</h4>
+                            <p class="text-dark">University Selection is a major step towards garnering student's career
+                                graph. Our in-house team of mentors gives a pre-university briefing for students and
+                                acquaint them with the right university</p>
+                            <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="service-container">
+                        <div class="mb-4 mb-md-0 bg-white service-content">
+                            <img src="./assets/i3.png" alt="Service 3" class="img-fluid">
+                            <h4 style="color: black;">Scholarship Assistance</h4>
+                            <p class="text-dark">When students apply for a particular university we make sure that we
+                                accustom the students with scholarship assistance being provided by the university.</p>
+                            <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="text-align: right;">
-                Designed and developed by PRODIGIT.
+
+            <div class="row" style="margin-top: 50px;">
+                <!-- Service 4 -->
+                <div class="col-md-4">
+                    <div class="service-container">
+                        <div class="mb-4 mb-md-0 bg-white service-content">
+                            <img src="./assets/i4.png" alt="Service 4" class="img-fluid">
+                            <h4 style="color: black;">Course Selection</h4>
+                            <p class="text-dark">The expert panel of Consultants are always available for the students
+                                who find it tough to select their course with universities when applying for their
+                                graduate and postgraduate courses.</p>
+                            <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-4">
+                    <div class="service-container">
+                        <div class="mb-4 mb-md-0 bg-white service-content">
+                            <img src="./assets/i5.png" alt="Service 5" class="img-fluid">
+                            <h4 style="color: black;">Visa Assistance</h4>
+                            <p class="text-dark">The students who enrol with us have a privilege to have a comprehensive
+                                visa assistance and documentation required for the successful admission to the
+                                university.</p>
+                            <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-4">
+                    <div class="service-container">
+                        <div class="mb-4 mb-md-0 bg-white service-content">
+                            <img src="./assets/i6.png" alt="Service 6" class="img-fluid">
+                            <h4 style="color: black;">Pre-Departure Assistance</h4>
+                            <p class="text-dark">We are also involved in the pre-departure assistance service for the
+                                students. The in-house team brief the students about their travel plans, accommodation
+                                and other amenities.</p>
+                            <hr class="bg-orange" style="width: 50px; height: 2px; margin: 10px auto;">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" style="background-color: #F5F5F5; padding: 50px 0;">
+        <div class="container">
+            <h5 style="font-weight: bold;">Why Choose Us</h5>
+            <h2 style="font-weight: bold;">Few reasons to </h2>
+            <h2 style="font-weight: bold;">Choose our <span style="color: #17A43B;">Company</span></h2>
+
+            <div class="row mt-5">
+                <!-- Card 1 -->
+                <div class="col-md-3">
+                    <div class="box-container rounded border-purple text-center p-4">
+                        <h5 style="color: black; font-weight: bold;">Direct Interviews</h5>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-3">
+                    <div class="box-container rounded border-purple text-center p-4">
+                        <h5 style="color: black; font-weight: bold;">Cost Effective</h5>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-3">
+                    <div class="box-container rounded border-purple text-center p-4">
+                        <h5 style="color: black; font-weight: bold;">Trusted Customers</h5>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-3">
+                    <div class="box-container rounded border-purple text-center p-4">
+                        <h5 style="color: black; font-weight: bold;">Support Team</h5>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-black mt-3 font-weight-bold">Top rated by customers & immigration firms with 100%
+                success rate.</p>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section"
+        style="background-image: url('./assets/company.jpg'); background-size: 100% 100%; position: relative; height: 400px;">
+        <div class="overlay"
+            style="background-color: #17A43B; opacity: 0.8; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </div>
+        <div class="container text-center text-white" style="position: relative; z-index: 2; height: 100%;">
+            <h5 style="padding-top: 60px;">THE NUMBERS SAY IT ALL</h5>
+
+
+            <div class="row mt-5">
+                <!-- Certificate Icon -->
+                <div class="col-md-3">
+                    <i class="fas fa-certificate fa-3x" style="color: white;"></i>
+                    <p class="mt-2" style="font-size: 50px;">28</p>
+                    <p style="font-size: 20px;">Certified Courses</p>
+                </div>
+
+                <!-- Graduate Student Icon -->
+                <div class="col-md-3">
+                    <i class="fas fa-graduation-cap fa-3x" style="color: white;"></i>
+                    <p class="mt-2" style="font-size: 50px;">204,339</p>
+                    <p style="font-size: 20px;">Student Enrolled</p>
+                </div>
+
+                <!-- Building Icon -->
+                <div class="col-md-3">
+                    <i class="fas fa-building fa-3x" style="color: white;"></i>
+                    <p class="mt-2" style="font-size: 50px;">75%</p>
+                    <p style="font-size: 20px;">Passing to Universities</p>
+                </div>
+
+                <!-- 2 People Icon -->
+                <div class="col-md-3">
+                    <i class="fas fa-users fa-3x" style="color: white;"></i>
+                    <p class="mt-2" style="font-size: 50px;">79%</p>
+                    <p style="font-size: 20px;">Satisfied Parent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Universities Section -->
+    <section class="top-universities" style="background-color: white; color: white; padding: 50px 0; overflow: hidden;">
+        <div class="container">
+            <h5 style="font-weight: bold; color: #4C367E;">Top universities</h5>
+            <h2 style="font-weight: bold; color: black;">Top Universities </h2>
+            <h2 style="font-weight: bold; color: black;">That we <span style="color: #17A43B;">Collaborated</span></h2>
+
+
+            <div class="row"
+                style="display: flex; justify-content: space-evenly; align-items: center; margin-top: 40px;">
+                <!-- University 1 -->
+                <div class="col-md-3" style="flex: 1;">
+                    <div class="university-card" style="text-align: center; height: 200px;">
+                        <img src="./assets/uni1.jpeg" alt="University 1" class="img-fluid"
+                            style="width: 100%; height: 100%; ">
+                        <div class="overlay">
+                            <p>UNIVERSITY OF CALIFORNIA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University 2 -->
+                <div class="col-md-3" style="flex: 1;">
+                    <div class="university-card" style="text-align: center; height: 200px;">
+                        <img src="./assets/uni2.jpeg" alt="University 2" class="img-fluid"
+                            style="width: 100%; height: 100%; ">
+                        <div class="overlay">
+                            <p>UNIVERSITY OF CAMBRIDGE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University 3 -->
+                <div class="col-md-3" style="flex: 1;">
+                    <div class="university-card" style="text-align: center; height: 200px;">
+                        <img src="./assets/uni3.jpeg" alt="University 3" class="img-fluid"
+                            style="width: 100%; height: 100%;">
+                        <div class="overlay">
+                            <p>LELAND STANFORD JUNIOR UNIVERSITY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University 4 -->
+                <div class="col-md-3" style="flex: 1;">
+                    <div class="university-card" style="text-align: center; height: 200px;">
+                        <img src="./assets/uni4.jpeg" alt="University 4" class="img-fluid"
+                            style="width: 100%; height: 100%;">
+                        <div class="overlay">
+                            <p>UNIVERSITY OF OXFORD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University 5 -->
+                <div class="col-md-3" style="flex: 1;">
+                    <div class="university-card" style="text-align: center; height: 200px;">
+                        <img src="./assets/uni5.jpeg" alt="University 5" class="img-fluid"
+                            style="width: 100%; height: 100%;">
+                        <div class="overlay">
+                            <p>UNIVERSITY OF HARVARD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+    <section class="testimonials"
+        style="position: relative; background-image: url('./assets/feed.jpeg'); background-size: cover; height: 80vh; text-align: left; color: white; padding: 10px 0; display: flex; flex-direction: column; justify-content: center;">
+
+        <!-- Overlay -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;">
+        </div>
+
+        <div class="container text-white">
+            <h5 style="z-index: 1; position: relative;">Testimonials</h5>
+            <h2 style="z-index: 1; position: relative;">What they're talking</h2>
+            <h2 style="z-index: 1; position: relative;">about <span style="color: #17A43B;">Square one overseas</span>
+            </h2>
+
+            <!-- Carousel -->
+            <div id="testimonialsCarousel" class="carousel slide mt-5" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-between">
+
+                            <!-- Card 1 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile1.jpeg" alt="Profile 1"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.9</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile2.jpeg" alt="Profile 2"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.5</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile3.jpeg" alt="Profile 2"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.5</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-between">
+
+                            <!-- Card 1 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile4.jpeg" alt="Profile 1"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.9</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile5.jpeg" alt="Profile 2"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.5</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile6.jpeg" alt="Profile 2"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.5</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-between">
+
+                            <!-- Card 1 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile7.jpeg" alt="Profile 1"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.9</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile8.jpeg" alt="Profile 2"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.5</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card  3-->
+                            <div class="card-container" style="width: 48%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="profile-image">
+                                                <img src="./assets/profile9.jpeg" alt="Profile 2"
+                                                    class="rounded-circle img-fluid" style="width: 50px; height: 50px;">
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-solid fa-star" style="color: #fbff00;"></i>
+                                                <i class="fa-regular fa-star" style="color: #fbff00;"></i>
+                                            </div>
+                                            <div class="ml-2" style="color: black;">4.5</div>
+                                            <div class="ml-2">
+                                                <i class="fa-solid fa-quote-left"
+                                                    style="color: #4C367E; font-size: 60px;"></i>
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="color: black;">
+                                            Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply dummy text of the
+                                            printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the
+                                            1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Carousel Dots -->
+                    <ol class="carousel-indicators" style="margin-top: 10px;">
+                        <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+                        <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                </div>
+            </div>
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#testimonialsCarousel').carousel();
+        });
+    </script>
+
+    <!-- Register Form Section -->
+    <section class="register-form" style="background-color: white; color: white; padding: 50px 0;">
+        <div class="container">
+            <!-- Register Form Header -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 style="color: #4C367E; font-weight: bold;">Register Form</h5>
+                    <h2 style="color: black; font-weight: bold;">Get in touch</h2>
+                    <h2 style="color: black; font-weight: bold;">with <span style="color: #17A43B;">Us</span></h2>
+                    <p style="color: black; margin-top: 50px;">Lorem ipsum is simply a Dummy Text. Lorem ipsum is simply
+                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Register Form -->
+                    <form style="color: black;">
+
+                        <!-- First Row: First name and Last name -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    style="background-color: #C0C0C0; width: 100%;">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName"
+                                    style="background-color: #C0C0C0; width: 100%;">
+                            </div>
+                        </div>
+
+                        <!-- Second Row: Email and Phone number -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email ID</label>
+                                <input type="email" class="form-control" id="email"
+                                    style="background-color: #C0C0C0; width: 100%;">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone"
+                                    style="background-color: #C0C0C0; width: 100%;">
+                            </div>
+                        </div>
+
+                        <!-- Third Row: Country and State -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="country">Country</label>
+                                <select id="country" class="form-control"
+                                    style="background-color: #C0C0C0; width: 100%;">
+                                    <option selected>Select</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="state">State</label>
+                                <select id="state" class="form-control" style="background-color: #C0C0C0; width: 100%;">
+                                    <option selected>Select</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Row: City and Nearest branch -->
+                        <div class="form-row align-items-center">
+                            <div class="form-group col-md-6">
+                                <label for="city">City</label>
+                                <select id="city" class="form-control" style="background-color: #C0C0C0; width: 100%;">
+                                    <option selected>Select</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="branch">Nearest Branch</label>
+                                <select id="branch" class="form-control"
+                                    style="background-color: #C0C0C0; width: 100%;">
+                                    <option selected>Select</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Fifth Row: Register Button -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <button type="submit" class="btn btn-orange btn-block"
+                                    style="background-color: #FF8B00; color: white; width: 100%;">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Accreditation Section -->
+    <section class="global-accreditation" style="background-color: white; color: #4C367E; padding: 50px 0;">
+        <div class="container">
+            <h5 style="z-index: 1; position: relative; color: #4C367E;">Global Accreditation</h5>
+            <h2 style="z-index: 1; position: relative; color: black;">Lorem ipsum is</h2>
+            <h2 style="z-index: 1; position: relative; color: black; margin-bottom: 40px;">simply a services<span
+                    style="color: #17A43B;"> Dummy Text</span></h2>
+
+            <div class="grid-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <!-- Combined image and right side box -->
+                <div style="position: relative; overflow: hidden; height: 500px; margin-right: -20px;">
+                    <div
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #4C367E; opacity: 0.8;">
+                    </div>
+                    <img src="./assets/people.jpeg" alt="People" class="img-fluid" style="width: 100%; height: 100%;">
+                </div>
+
+                <!-- Right side with text -->
+                <div
+                    style="background-color: #4C367E; padding-left: 30px; padding-right: 30px; height: 500px; overflow-y: auto;">
+                    <h2 style="color: white; margin-top: 60px;">Global Accreditation</h2>
+                    <p style="color: white;">
+                        Lorum ipsm simply a Dummy Text. Lorem ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularized in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Link, Test Prep, Admission, Contact Us Section -->
+    <section class="quick-links" style="background-color: #2A1F1F; padding: 50px 0; color: white;">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Link -->
+                <div class="col-md-3">
+                    <h5>Quick Link</h5>
+                    <ul>
+                        <li><span style="color: #FF8B00">></span> <span style="color: #888;">Why Choose Us?</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">About Us</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Career</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Register</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Connect with us</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Test Prep -->
+                <div class="col-md-3">
+                    <h5>Test Prep</h5>
+                    <ul>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">IELTS</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">PTE</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">TOEFL</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">CELPIP</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">GRE</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">GMAT</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">SAT</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">GERMAN</span></li>
+                    </ul>
+                </div>
+
+                <!-- Admission -->
+                <div class="col-md-3">
+                    <h5>Admission</h5>
+                    <ul>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in UK</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in USA</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Canada</span>
+                        </li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Australia</span>
+                        </li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in France</span>
+                        </li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Germany</span>
+                        </li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in Ireland</span>
+                        </li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Study in New
+                                Zealand</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">+911234567890</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Address Dummy Text</span>
+                        </li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Location</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Landmark</span></li>
+                        <li><span style="color: #FF8B00;">></span> <span style="color: #888;">Email Id</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: black; color: white; padding: 5px 0;">
+        <div class="container">
+
+            <!-- First Horizontal Line -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5>Connect with us</h5>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h5>Subscribe with us</h5>
+                </div>
+            </div>
+            <!-- Social Media Icons -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <div style="display: flex; margin-right: 20px;">
+                    <i class="fab fa-facebook-f fa-2x"
+                        style="color: black; background-color: white; border-radius: 50%; padding: 10px;"></i>
+                    <i class="fab fa-linkedin-in fa-2x"
+                        style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
+                    <i class="far fa-envelope fa-2x"
+                        style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
+                    <i class="fab fa-twitter fa-2x"
+                        style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
+                    <i class="fab fa-instagram fa-2x"
+                        style="color: black; background-color: white; border-radius: 50%; padding: 10px; margin-left: 10px;"></i>
+                </div>
+
+                <!-- Subscribe Text Box -->
+                <div class="container mt-5" style="width: fit-content;">
+                    <div class="input-group-custom">
+                        <div class="input-group-custom-left">
+                            <span style="color: #888;">Enter your email address</span>
+                        </div>
+                        <div class="input-group-custom-right">
+                            <i class="fas fa-paper-plane input-group-custom-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Horizontal Line -->
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <div>
+                    <span>&copy;</span> All rights reserved by Square One Overseas
+                </div>
+                <div style="text-align: right;">
+                    Designed and developed by PRODIGIT.
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>
