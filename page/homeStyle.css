@@ -51,8 +51,64 @@ p {
     font-size: 18px;
     color: white;
     margin-right: 10px;
+}    
+
+/* For screens smaller than 1280px */
+@media screen and (max-width: 1280px) {
+    .top-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-navbar-item {
+        margin-right: 10px;
+    }
+
+    .top-navbar-item i {
+        margin-right: 3px;
+    }
 }
 
+/* For screens smaller than 1020px */
+@media screen and (max-width: 1020px) {
+    .top-navbar-item {
+        display: none; 
+    }
+    .top-navbar-links {
+        display: block; 
+        margin-left: auto;
+    }
+}
+
+/* For screens smaller than 780px */
+@media screen and (max-width: 780px) {
+    .top-navbar {
+        flex-direction: column;
+        padding: 8px;
+    }
+    .top-navbar-item {
+        display: block;
+        margin: 5px 0;
+    }
+    .service-container {
+        margin-bottom: 30px;
+    }
+}
+
+/* For screens smaller than 640px */
+@media screen and (max-width: 640px) {
+    .top-navbar {
+        padding: 5px;
+    }
+    .social-icons-box {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    .social-icon {
+        margin-right: 5px;
+    }
+}
 /* Media query for mobile responsiveness */
 /* styles for mobile devices */
 /* @media screen and (max-width: 767px) {
@@ -174,55 +230,43 @@ p {
     margin-bottom: 10px;
 }
 
-.floating-button {
-    background-color: #17A43B;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
 /* Style for our services*/
 .our-services {
     font-size: 10px;
 
 }
 
-/* Style for info section */
-/* Media Query for Small Screens */
-/* @media (max-width: 767px) {
-    .custom-info-section {
-        height: auto;
-    }
+.service-container {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 15px;
+}
 
-    .custom-overlay {
-        height: auto;
-    }
+.service-container:hover {
+    background-color: #FF8B00;
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-    .custom-container {
-        padding: 30px 15px;
-    }
+.service-content {
+    padding: 20px;
+}
 
-    .custom-column {
-        width: 100%;
-        margin-bottom: 20px;
+/* For screens smaller than 640px */
+@media screen and (max-width: 640px) {
+    .service-container {
+        margin-bottom: 30px;
     }
+    .university-card {
+        height: 100px;
+    }
+    .testimonials {
+        height: 100vh;
+    }
+}
 
-    .custom-icon {
-        font-size: 10px; 
-    }
-
-    .custom-number {
-        font-size: 5px;
-    }
-
-    .custom-label {
-        font-size: 5px;
-    }
-} */
 
 /* Style for top uiversity */
 .university-card {
@@ -399,23 +443,6 @@ div[style="display: flex; margin-right: 20px;"] {
 }
 
 /* */
-.service-container {
-    position: relative;
-    overflow: hidden;
-    background-color: white;
-    transition: transform 0.3s, background-color 0.3s;
-    border-radius: 15px;
-}
-
-.service-container:hover {
-    background-color: #FF8B00;
-    transform: scale(1.1);
-    /* transition: background-color 0.3s, transform 0.3s; */
-}
-
-.service-content {
-    padding: 20px;
-}
 
 .box-container {
     border: 2px solid #4C367E;
@@ -475,57 +502,6 @@ div[style="display: flex; margin-right: 20px;"] {
 /* Media Queries for Responsive Design */
 
 /* For screens smaller than 1280px */
-@media screen and (max-width: 1280px) {
-    .top-navbar-item {
-        margin-right: 10px;
-    }
-    .top-navbar-item i {
-        margin-right: 3px;
-    }
-}
-
-/* For screens smaller than 1020px */
-@media screen and (max-width: 1020px) {
-    .top-navbar-item {
-        display: none; 
-    }
-    .top-navbar-links {
-        display: block; 
-        margin-left: auto;
-    }
-}
-
-/* For screens smaller than 780px */
-@media screen and (max-width: 780px) {
-    .top-navbar {
-        flex-direction: column;
-        padding: 8px;
-    }
-    .top-navbar-item {
-        display: block;
-        margin: 5px 0;
-    }
-    .service-container {
-        margin-bottom: 30px;
-    }
-}
-
-/* For screens smaller than 640px */
-@media screen and (max-width: 640px) {
-    .top-navbar {
-        padding: 5px;
-    }
-    .social-icons-box {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-    }
-    .social-icon {
-        margin-right: 5px;
-    }
-}
-
-/* For screens smaller than 1280px */
 @media (max-width: 1280px) {
     .col-md-6 {
         flex: 0 0 75%;
@@ -536,18 +512,6 @@ div[style="display: flex; margin-right: 20px;"] {
     }
 }
 
-/* For screens smaller than 640px */
-@media screen and (max-width: 640px) {
-    .service-container {
-        margin-bottom: 30px;
-    }
-    .university-card {
-        height: 100px;
-    }
-    .testimonials {
-        height: 100vh;
-    }
-}
 
 @media screen and (max-width: 780px) {
     .info-section {
