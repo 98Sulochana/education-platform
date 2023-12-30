@@ -129,7 +129,6 @@ p {
 .home-content {
     background: url('./assets/bg1.jpeg') center/cover no-repeat;
     color: white;
-
     padding: 80px 20px;
     height: 70vh;
 
@@ -311,19 +310,43 @@ div[style="display: flex; margin-right: 20px;"] {
 
 /* slide show style*/
 
-.carousel-indicators li {
+#testimonialsCarousel .carousel-indicators li {
     background-color: #FFA500;
     border-radius: 50%;
     width: 8px;
     height: 8px;
     border: 2px solid #FFA500;
+    margin-top: 70px; 
 }
 
-.carousel-indicators .active {
+#testimonialsCarousel .carousel-indicators .active {
     background-color: #FFA500;
     border: 2px solid #FFFFFF;
 }
 
+.carousel-inner .item {
+    /* display: flex; */
+}
+
+.container-item {
+    background-color: aqua;
+    margin-left: 10px;
+    width: 30%;
+}
+
+.container-item img {
+    width: 50%;
+}
+
+.rating {
+    color: #fbff00;
+}
+
+#testimonialsCarousel {
+    margin-top: 50px; 
+}
+
+/* */
 .service-container {
     position: relative;
     overflow: hidden;
