@@ -51,7 +51,7 @@ p {
     font-size: 18px;
     color: white;
     margin-right: 10px;
-}    
+}
 
 /* For screens smaller than 1280px */
 @media screen and (max-width: 1280px) {
@@ -72,10 +72,11 @@ p {
 /* For screens smaller than 1020px */
 @media screen and (max-width: 1020px) {
     .top-navbar-item {
-        display: none; 
+        display: none;
     }
+
     .top-navbar-links {
-        display: block; 
+        display: block;
         margin-left: auto;
     }
 }
@@ -86,10 +87,12 @@ p {
         flex-direction: column;
         padding: 8px;
     }
+
     .top-navbar-item {
         display: block;
         margin: 5px 0;
     }
+
     .service-container {
         margin-bottom: 30px;
     }
@@ -100,17 +103,20 @@ p {
     .top-navbar {
         padding: 5px;
     }
+
     .social-icons-box {
         display: flex;
         justify-content: center;
         padding: 5px;
     }
+
     .social-icon {
         margin-right: 5px;
     }
 }
+
 /* Media query for mobile responsiveness */
-/* styles for mobile devices */
+
 /* @media screen and (max-width: 767px) {
     .top-navbar {
         background-color: #4C367E;
@@ -259,9 +265,11 @@ p {
     .service-container {
         margin-bottom: 30px;
     }
+
     .university-card {
         height: 100px;
     }
+
     .testimonials {
         height: 100vh;
     }
@@ -325,6 +333,113 @@ p {
     }
 } */
 
+/* slide show style*/
+
+#testimonialsCarousel .carousel-indicators li {
+    background-color: #FFA500;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #FFA500;
+    margin-top: 70px;
+}
+
+#testimonialsCarousel .carousel-indicators .active {
+    background-color: #FFA500;
+    border: 2px solid #FFFFFF;
+}
+
+.carousel-inner .item {
+    /* display: flex; */
+}
+
+.container-item {
+    background-color: aqua;
+    margin-left: 10px;
+    width: 30%;
+}
+
+.container-item img {
+    width: 50%;
+}
+
+.rating {
+    color: #fbff00;
+}
+
+#testimonialsCarousel {
+    margin-top: 50px;
+}
+
+/*Registration form section */
+
+/* For screens smaller than 1280px */
+@media (max-width: 1280px) {
+    .col-md-6 {
+        flex: 0 0 75%;
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+/* */
+.box-container {
+    border: 2px solid #4C367E;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.box-container:hover {
+    background-color: #4C367E;
+
+}
+
+.input-group-custom {
+    display: flex;
+    margin-left: 10px;
+}
+
+.input-group-custom-left {
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #4C367E;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group-custom-right {
+    background-color: #FF8B00;
+    padding: 10px;
+    border: 1px solid #4C367E;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-group-custom-right:hover {
+    background-color: #FFA630;
+}
+
+.input-group-custom-icon {
+    color: white;
+    margin-right: 5px;
+}
+
+.input-group-custom input {
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #4C367E;
+}
+
 /* Style for list */
 .quick-links ul {
     list-style: none;
@@ -340,7 +455,6 @@ p {
 .quick-links li span {
     margin-right: 5px;
 }
-
 
 /* Footer Section Style*/
 footer input[type="text"] {
@@ -404,114 +518,8 @@ div[style="display: flex; margin-right: 20px;"] {
     cursor: pointer;
 }
 
-/* slide show style*/
-
-#testimonialsCarousel .carousel-indicators li {
-    background-color: #FFA500;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    border: 2px solid #FFA500;
-    margin-top: 70px; 
-}
-
-#testimonialsCarousel .carousel-indicators .active {
-    background-color: #FFA500;
-    border: 2px solid #FFFFFF;
-}
-
-.carousel-inner .item {
-    /* display: flex; */
-}
-
-.container-item {
-    background-color: aqua;
-    margin-left: 10px;
-    width: 30%;
-}
-
-.container-item img {
-    width: 50%;
-}
-
-.rating {
-    color: #fbff00;
-}
-
-#testimonialsCarousel {
-    margin-top: 50px; 
-}
-
-/* */
-
-.box-container {
-    border: 2px solid #4C367E;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.box-container:hover {
-    background-color: #4C367E;
-
-}
-
-.input-group-custom {
-    display: flex;
-    margin-left: 10px;
-}
-
-.input-group-custom-left {
-    flex-grow: 1;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #4C367E;
-    border-radius: 5px 0 0 5px;
-    display: flex;
-    align-items: center;
-}
-
-.input-group-custom-right {
-    background-color: #FF8B00;
-    padding: 10px;
-    border: 1px solid #4C367E;
-    border-radius: 0 5px 5px 0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.input-group-custom-right:hover {
-    background-color: #FFA630;
-}
-
-.input-group-custom-icon {
-    color: white;
-    margin-right: 5px;
-}
-
-.input-group-custom input {
-    width: 50%;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: #4C367E;
-}
 
 /* Media Queries for Responsive Design */
-
-/* For screens smaller than 1280px */
-@media (max-width: 1280px) {
-    .col-md-6 {
-        flex: 0 0 75%;
-        max-width: 100%;
-        padding: 15px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-}
-
 
 @media screen and (max-width: 780px) {
     .info-section {
